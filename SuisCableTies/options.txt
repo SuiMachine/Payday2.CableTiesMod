@@ -1,0 +1,21 @@
+{
+    "menu_id" : "sui_cableties_mod",
+    "parent_menu_id" : "lua_mod_options_menu",
+    "title" : "sui_cableties_title",
+    "back_callback" : "SuiCableTies_Close",
+    "items" : [
+        {
+            "type" : "toggle",
+            "id"   : "sui_enabled_desc",
+            "title": "sui_ctenabled_desc",
+            "description" : "sui_cableties_desc",
+            "callback" : "SuiCableTies_enabledToggle",
+            "value" : "enabled",
+            "default_value" : true
+        },
+        {
+            "type" : "divider",
+            "size" : 8
+        }
+    ]
+}
