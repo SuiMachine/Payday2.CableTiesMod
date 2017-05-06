@@ -1,5 +1,5 @@
 {
     "sui_cableties_title" : "Sui\'s Cable Ties Mod",
     "sui_cableties_desc" : "Options for Sui's CableTies Mod",
-    "sui_ctenabled_desc" : "Enable Cable Ties modification",
+    "sui_ctenabled_desc" : "Enable Cable Ties modification"
 }

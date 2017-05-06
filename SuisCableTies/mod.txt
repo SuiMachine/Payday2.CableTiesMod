@@ -4,12 +4,6 @@
 	"author" : "SuicideMachine",
 	"contact" : "",
 	"version" : "1.0",
-	"updates" : [
-		{
-			"revision" : 1.0,
-			"identifier": "suicableties"
-		}
-	],
 	"priority" : 1000,
 	"hooks" : [
 		{ "hook_id" : "lib/tweak_data/upgradestweakdata",
