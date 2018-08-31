@@ -76,19 +76,27 @@ end
 -------------------------------------------------
 --  Handler for shit
 -------------------------------------------------
+
 if RequiredScript == "lib/tweak_data/upgradestweakdata" then
-	if isSuiCableTiesEnabled() then
+    if isSuiCableTiesEnabled() then
 		local old_init_pd2_values = UpgradesTweakData._init_pd2_values
 		function UpgradesTweakData:_init_pd2_values(...)
 			old_init_pd2_values(self, ...)
-		self.values.cable_tie.quantity_1 = {50}
-		self.values.cable_tie.quantity_2 = {50}
+            self.values.cable_tie.quantity_1 = {50}
+            self.values.cable_tie.quantity_2 = {50}
 		end
-		
 	end
 end
 
-
+if RequiredScript == "lib/tweak_data/equipmentstweakdata" then
+    if isSuiCableTiesEnabled() then
+		local old_init = EquipmentsTweakData.init
+		function EquipmentsTweakData:init(...)
+			old_init(self, ...)
+            self.specials.cable_tie.max_quantity = 60
+		end
+	end
+end
 
 -------------------------------------------------
 --  Network Nonsense
