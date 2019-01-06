@@ -4,6 +4,7 @@
 	"author" : "SuicideMachine",
 	"contact" : "",
 	"version" : "1.0",
+	"blt_version" : 2,
 	"priority" : 1000,
 	"hooks" : [
 		{ "hook_id" : "lib/tweak_data/upgradestweakdata",
